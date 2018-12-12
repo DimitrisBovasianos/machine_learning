@@ -2,7 +2,7 @@
 
 I extract all the searches that have been made from my website https://marketclaw.com.
 
-Took the 2 firsts letters and the 2 last from the searched words and  I passed them to
+Took the  first 2 letters and the last 2 from the searched words and  I passed them to
 
 a CSV file with ord() for each letter in order to get a number.
 
