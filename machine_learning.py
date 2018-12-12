@@ -46,14 +46,13 @@ models.append(('SVM', SVC()))
 model = GaussianNB()
 model.fit(X_train, Y_train)
 predictions = model.predict(X_validation)
-print(X_validation[0])
-#for i in range(len(Y_validation)):
-    #print("x={}, predict={}".format(Y_validation[i],predictions[i]))
-#print(accuracy_score(Y_validation, predictions))
+for i in range(len(Y_validation)):
+    print("x={}, predict={}".format(Y_validation[i],predictions[i]))
+print(accuracy_score(Y_validation, predictions))
 #The confusion matrix provides an indication of the three errors made.
-#print(confusion_matrix(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
 # Finally, the classification report provides a breakdown of each class by precision
-#print(classification_report(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
 #Testing for a word
 word = 'goodmorning'
 sample = [word[0],word[1],word[len(word)-2],word[len(word)-1]]
