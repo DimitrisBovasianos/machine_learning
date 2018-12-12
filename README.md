@@ -3,7 +3,9 @@ with the writer.py:
 
   I extract all the searches that have been made from my website https://marketclaw.com.
 
-  Took the  first 2 letters and the last 2 from the searched words and  I passed them to
+  Took the  first 3(all the words are 3 letters and above) letters and the last 2 from the searched words and 
+  
+  I passed them to
 
   a CSV file with ord() for each letter in order to get a number.
 
@@ -24,3 +26,5 @@ with the machine_learning.py:
  Correcting spellings mistaces if didnt return the desirable results.
 
  And finally in autocomplete(still working on that one)
+
+ Currently at 46%
