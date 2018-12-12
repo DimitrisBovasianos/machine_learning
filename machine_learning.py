@@ -15,7 +15,7 @@ import numpy as np
 
 url = "/home/dimitris/test1.csv"
 
-names = ['first_letter','second_letter','second_to_last_letter','last_letter','word']
+names = ['first_letter','second_letter','third_letter','second_to_last_letter','last_letter','word']
 
 dataset = pandas.read_csv(url,names=names)
 #Dimensions of the dataset.
@@ -27,8 +27,8 @@ print(dataset.head(20))
 
 #split the dataset 80%-20%
 array = dataset.values
-X = array[:,0:4]
-Y = array[:,4]
+X = array[:,0:5]
+Y = array[:,5]
 validation_size = 0.2 #this give us the percentance we gonna split
 seed = 7
 X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
@@ -55,7 +55,7 @@ print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
 #Testing for a word
 word = 'goodmorning'
-sample = [word[0],word[1],word[len(word)-2],word[len(word)-1]]
+sample = [word[0],word[1],word[2],word[len(word)-2],word[len(word)-1]]
 for i in range(0,len(sample)):
     sample[i] = ord(sample[i])
 x = [np.array(sample)]
