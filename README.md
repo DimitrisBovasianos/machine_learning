@@ -1,23 +1,26 @@
 # machine_learning
+with the writer.py:
 
-I extract all the searches that have been made from my website https://marketclaw.com.
+  I extract all the searches that have been made from my website https://marketclaw.com.
 
-Took the  first 2 letters and the last 2 from the searched words and  I passed them to
+  Took the  first 2 letters and the last 2 from the searched words and  I passed them to
 
-a CSV file with ord() for each letter in order to get a number.
+  a CSV file with ord() for each letter in order to get a number.
 
-The code split the dataset in 2 pieces:
+with the machine_learning.py:
 
-a 80% for training, and a 20% of testing later.
+ The code split the dataset in 2 pieces:
 
-I create the dataset with pandas and i only use nonlinear algorithms for the training for the model.
+ a 80% for training, and a 20% of testing later.
 
-Notes:
+ I create the dataset with pandas and i only use nonlinear algorithms for the training for the model.
 
-The most searched words have the better precision.
+ Notes:
 
-The code can be used to read words in search fields and suggests others.
+ The most searched words have the better precision.
 
-Correcting spellings mistaces if didnt return the desirable results.
+ The code can be used to read words in search fields and suggests others.
 
-And finally in autocomplete(still working on that one)
+ Correcting spellings mistaces if didnt return the desirable results.
+
+ And finally in autocomplete(still working on that one)
